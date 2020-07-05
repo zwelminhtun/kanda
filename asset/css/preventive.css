@@ -1,0 +1,275 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+     
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 300px;
+    z-index: -1;
+}
+.preventive{
+    position: relative;
+}
+.preventive_dentistry{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.preventive .title{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #E9F8F8;
+}
+.preventive .saliva_test{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.preventive .saliva_test span::after{ 
+    background-color:#F4FFB3 ; 
+    top :10px;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 57%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 120px;
+    z-index: -1;
+}
+.preventive .saliva_testing{
+    width: 200px;
+    font-size: 13px;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.preventive .saliva_testing .rotate{
+   transform: rotate(-10deg);
+   position: absolute;
+   left: 10%;
+}
+.background{
+    padding:10px 0;
+    margin-top: 90px;
+    text-align: center;
+}
+ .background .opacity{
+    background-color: white;
+    width: 100%;
+    opacity: .8;
+    padding: 40px 0;
+    margin: 50px auto;
+}
+.opacity .title{
+    font-size: 20px;
+    color:#0084AB;
+    position: relative;
+    z-index: 1;
+}
+.opacity span{
+    display: block;
+}
+.opacity .title::after{ 
+    background-color:#F4FFB3 ; 
+    top :10px;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 350px;
+    z-index: -1;
+}
+.opacity .slach{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.opacity .slach::before{ 
+    background-color:#0084AB ; 
+    content: '';
+    display: block;
+    height: 40px;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 5px;
+    z-index: -1;
+    transform: rotate(-30deg);
+}
+.opacity .slach::after{ 
+    background-color:#0084AB ; 
+    content: '';
+    display: block;
+    height: 40px;
+    top:0;
+    right: 20%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 5px;
+    z-index: -1;
+    transform: rotate(30deg);
+}
+.background .about{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.about .about_box{
+    background-color: #0084AB;
+    padding: 40px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: white;
+}
+.about .about_box span{
+    display: block;
+    margin: 7px 0;
+}
+.inspection{
+    padding: 50px 0;
+    background-color: #E9F8F8;
+}
+.inspection .inspection_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+}
+.inspection .inspection_item{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding:50px 0;
+    background-color: white;
+    border: 2px dotted #0084AB;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.inspection .inspection_item .item_inner{
+    display: flex;
+}
+.inspection .inspection_item .item_01{
+
+    width: 20%;
+    margin: 20px auto;
+    text-align: center;
+}
+.inspection .inspection_item .item_02{
+
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+}
+.inspection_item img{
+    width: 30px;
+}
+.inspection_item span{
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+.inspection_item span::after{
+    background-color:#E9F8F8 ; 
+    top :10px;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 150px;
+    z-index: -1;
+}
+.inspection .item_title{
+    color: #0084AB;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top:-8%;
+}
+.inspection .about_item{
+    width: 85%;
+    text-align: center;
+    font-size: 15px;
+}
+.inspection .about_item span{
+    display: block;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0; 
+    }
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 200px;
+    }
+    .opacity .slach::before{ 
+    left: 5%
+}
+.opacity .slach::after{ 
+    right: 5%
+}
+
+}

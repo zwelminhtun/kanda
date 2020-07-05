@@ -1,0 +1,230 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+     
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 300px;
+    z-index: -1;
+}
+.implant_dentistry{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.implant .title{
+     text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #E9F8F8;
+}
+.implant_inner,.straumann,.implant_case,.implant_table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+}
+.straumann{
+    justify-content: flex-end;
+    max-width: 1000px;
+    width: 90%;
+}
+.implant_case{
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+}
+.implant_table{
+    justify-content: center;
+    max-width: 1000px;
+    widows: 100%;
+}
+.implant_inner .about_implant_01{
+    padding:0 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.implant_inner span{
+    display: block;
+}
+.implant_inner .about_implant_02{
+    width: 85%;
+    border: 2px solid #0084AB;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 80px 50px 70px 50px;
+    position: relative;
+    text-align: center;
+}
+.implant_inner .about_implant_03{
+    position: absolute;
+    padding: 0 50px;
+    background-color: white;
+    left: 20%;
+    text-align: center;
+    color: #0084AB;
+    z-index: 1;
+}
+.implant_inner .implant_steps{
+    width: 60%;
+    margin: 0 auto;
+}
+.implant_case .case{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.implant_case .case_title{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.implant_case .case span{
+    font-size: 20px;
+    padding: 10px 70px;
+    background-color: #0084AB;
+    color: white;
+}
+.implant_case .case_inner{
+    width: 40%;
+    margin-bottom: 70px;
+}
+.implant_case .arrow{
+    width: 5%;
+}
+.implant_case. case_inner span{
+    margin-bottom:20px;
+    display: block;
+    font-size: 13px;
+}
+.implant_case .before,.implant_case .after{
+    color: #0084AB;
+    font-family: sans-serif;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.implant_case .before::after,.implant_case .after::after{
+    background-color:lightgray ; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 4px;
+    left:0px;
+    position: absolute;
+    width: 40px;
+}
+.implant_case .end_case{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.implant_case .end_case span{
+    display: block;
+    text-align: center;
+}
+.implant_table .table_inner{
+    width: 90%;
+}
+.table_inner table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+ .table_inner table td{
+    border:2px solid lightgray;
+    padding: 13px 20px;
+    width: 40%;
+}
+.table_inner table tr:nth-child(1){
+    background-color: #E9F8F8;
+}
+.table_inner table tr td:nth-child(1){
+   background-color: #E9F8F8;
+   width: 20%;
+   text-align: left;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0;
+    }
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 200px;
+    }
+    .implant_inner .about_implant_02{
+    width: 80%;
+    border: 2px solid #0084AB;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+}
+    .implant_inner .about_implant_03{
+    text-align: center;
+    color: #0084AB;
+    margin:30px auto;
+    position:static;
+}
+.implant_inner .implant_steps{
+    width: 80%;
+    margin: 0 auto;
+}
+.implant_case .case_inner{
+    margin-bottom: 40px;
+}
+.implant_case{
+    justify-content: space-around;
+}
+}

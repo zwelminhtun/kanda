@@ -1,0 +1,130 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+     
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 300px;
+    z-index: -1;
+}
+.sterilization_dentistry{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.sterilization .about_sterilization{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.about_sterilization span{
+    display: block;
+}
+.sterilization .sterilization_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+.sterilization_inner .inner_l{
+    width: 38%;
+    margin-top: 30px;
+}
+.sterilization_inner .inner_r{
+    width: 60%;
+}
+.cross_infection{
+    background-color: #E9F8F8;
+    padding: 50px 0;
+}
+.cross_infection .infection_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px; 
+    width: 100%;
+    margin: 0 auto;
+}
+.infection_inner .content{
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 30px;
+    margin: 20px 0;
+}
+
+.infection_inner .content .title{
+    width: 100%;
+    font-size: 25px;
+    color:#0084AB;
+    border-left: 5px solid #0084AB;
+    display: block;
+    margin-bottom: 20px;
+}
+.infection_inner .content span{
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0; 
+    } 
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 200px;
+    }
+    .infection_inner .content .title{
+    
+    border-left: 0px solid #0084AB;
+    text-align: center;
+   
+}
+.infection_inner .content span{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+    }

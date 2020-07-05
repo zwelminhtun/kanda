@@ -1,0 +1,235 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+     
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 300px;
+    z-index: -1;
+}
+.clinic_information , .step_01{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px 0;
+}
+.information_title{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #E9F8F8;
+    
+
+}
+
+.information_inner{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+.information_inner .sub_information{
+    width: 20%;
+    margin: 50px auto;
+    
+}
+.information_inner .sub_information span{
+    text-align: center;
+    background-color:#0084AB;
+    border-radius: 50%;
+    padding:55px 30px;
+    color: white;
+}
+.step .step_inner{
+    width: 33.3%;
+    position: relative;
+}
+.step .step_inner img{
+    width: 120px;
+}
+.step .step_02{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px 0;
+    text-align: center;
+    
+}
+.step .step_02 .box{
+    width: 150px;
+    border: 2px solid #007A9E;
+    height: 25px;
+    text-align: center;
+    margin:0 auto;
+    padding: 10px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: #0084AB;
+}
+.step .step_02 .arrow span::before{
+     content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-left: 15px solid #0084AB;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+}
+.beginner{
+    background-color: #E9F8F8;
+    margin-bottom: 100px;
+}
+.beginner_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+}
+.beginner_inner .box{
+    width: 90%;
+    margin: 70px auto;
+    border: 2px solid #007A9E;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+}
+.beginner_inner .title{
+    font-size: 25px;
+    color:#007A9E;
+}
+.beginner_inner .guide_01{
+    padding:0 150px;
+    margin: 30px 0px;
+}
+.beginner_inner .guide_02{
+    text-align: left;
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+.beginner_inner .pdf{
+    width: 150px;
+    margin: 0 auto;
+}
+.language{
+    background-color: #E9F8F8;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0;
+    }
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 200px;
+    }
+    .information_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+    .information_inner .sub_information{
+    width: 30%;
+    margin: 70px auto;
+    text-align: center;
+    
+}
+.beginner_inner .box{
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid #007A9E;
+    padding: 30px;
+    
+}
+.beginner_inner .guide_01{
+    padding:0 50px;
+    margin: 20px 0px;
+}
+.beginner_inner .guide_02{
+    text-align: left;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+}
+@media only screen and (max-width: 500px) {
+ .information_inner .sub_information{
+    width: 40%;
+    margin: 70px auto;
+    text-align: center;
+    
+}
+
+    }

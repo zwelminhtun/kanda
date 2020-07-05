@@ -1,0 +1,169 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+    
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 600px;
+    z-index: -1;
+}
+.medical_hour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #E9F8F8;
+}
+.contact_page,.address,.work_hour{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+}
+.work_hour{
+    justify-content: flex-end;
+    font-weight: bold;
+}
+.work_hour .red{
+    color:red;
+}
+.contact_page .schedule{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact_page .schedule table{
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    color:white;
+}
+.contact_page .schedule table img{
+    width: 15px;
+}
+.contact_page .schedule table td{
+    padding: 10px 20px;
+    border: 2px solid lightgray;
+}
+.contact_page .schedule table tr:first-child{
+    background-color: #00A6CC;
+}
+.contact_page .schedule table tr td:first-child{
+    width: 20%;
+    background-color: #00A6CC;
+    text-align: left;
+}
+.contact_page .map{ 
+    width: 80%;
+    margin: 0px auto;
+}
+.contact_page .map iframe{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+
+}
+.address{
+    border-top: 2px solid lightgray;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.address .address_inner:first-child {
+    width: 43%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.address .address_inner:last-child {
+    width: 47%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.address .address_inner:last-child{
+    border-left: 2px solid lightgray;
+}
+.address_inner .inner_01 {
+    padding: 50px 30px;
+}
+.address_inner span{
+    display: block;
+    font-weight: bold;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0;
+    }
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 450px;
+    }
+    .address{
+        border-top: 2px solid lightgray;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    .address .address_inner:first-child {
+        width: 60%;
+        padding-right: 0px;
+    }
+    .address .address_inner:last-child {
+        width: 90%;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .address .address_inner:last-child{
+        border-left: 0px solid lightgray;
+    }
+}

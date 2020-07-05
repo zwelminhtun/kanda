@@ -1,0 +1,173 @@
+ .banner{
+    padding: 200px 0;
+}
+.banner_txt{
+    
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+	background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 400px;
+    z-index: -1;
+}
+
+.DXCT_machine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.about_3DXCT{
+	text-align: center;
+	margin: 50px auto;
+}
+.about_3DXCT span{
+	display: block;
+}
+.inner{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 900px;
+	width:100%;
+	margin: 50px auto;
+}
+
+.inner .inner_l{
+	width:33%;
+}
+.inner .inner_r{
+	width:63%;
+}
+.inner .inner_r .title{
+	padding: 10px;
+	background-color: #E9F8F8;
+	display: block;
+}
+.inner .inner_r table{
+	margin-bottom: 50px;
+}
+
+.inner .inner_r img{
+	width:30px;
+	margin: 10px 10px 0 10px;
+}
+.bg_blue{
+	background-color: #E9F8F8;
+	padding: 30px 0;
+	margin-bottom: 100px;
+}
+.bg_blue .inner span {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+.bg_blue .inner span::after{
+	background-color: #F4FFB3;  
+    top :40%;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 400px;
+    z-index: -1;
+}
+.bg_blue .inner .title{
+	width: 100%;
+	color:#0084AB;
+	font-size:20px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+}
+.bg_blue .inner .image{
+	width: 50%;
+	margin: 50px auto;
+}
+.bg_blue .inner .title_01{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.bg_blue .inner .title_01 span {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+.bg_blue .inner .title_01 span::after{
+	background-color: #F4FFB3;  
+    top :40%;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 750px;
+    z-index: -1;
+}
+.bg_blue table{
+	width:80%;
+	margin:30px auto;
+	font-weight: bold; 
+}
+.bg_blue table tr td:first-child{
+	width: 50px;
+}
+.bg_blue table img{
+	width: 30px;
+	margin-top: 15px;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+    	padding: 150px 0;
+    }
+    .banner_txt{
+    
+	    font-size: 30px;
+	    
+	}
+	.banner_txt span::after{
+		width: 300px;
+	}
+	.about_3DXCT{
+		padding: 0 30px;
+	}
+	.inner .inner_r{
+		width:90%;
+		margin: 0 auto;
+	}
+
+ }

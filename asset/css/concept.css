@@ -1,0 +1,130 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+    
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+	background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 300px;
+    z-index: -1;
+}
+
+.hospital_concept{
+	width: 100%;
+	margin-bottom: 50px;
+}
+.treatment_inner{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.treatment .treatment_l{
+	justify-content: flex-start;
+}
+.treatment .treatment_r{
+	justify-content: flex-end;
+}
+.treatment .treatment_inner .inner_l{
+	width: 40%;
+}
+.treatment .treatment_inner .inner_r{
+	width: 50%;
+	padding: 20px;
+	position: relative;
+}
+.treatment .treatment_02{
+	background-color:#E9F8F8; 
+	margin: 20px 0px;
+	padding: 10px 0px;
+}
+.treatment .treatment_04{
+	background-color:#E9F8F8; 
+	margin: 20px 0px;
+	padding: 10px 0px;
+}
+.treatment .treatment_05{
+	margin-bottom: 100px;
+}
+.treatment .title{
+	font-size: 30px;
+	color:#0084AB;
+	margin-left: 70px;
+	height: 100px;
+}
+
+.treatment .treatment_no{
+	position: relative;
+}
+.treatment .treatment_no .number{
+	position: absolute;
+	top: -40px;
+	left: 0;
+	font-size:70px;
+	color:#DDDDDD;
+}
+.treatment .treatment_no .number::after{
+	background-color:#DDDDDD ; 
+    content: '';
+    display: block;
+    height: 5px;
+    bottom: 10%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 50px;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+    	padding: 150px 0;
+    }
+    .banner_txt{
+    
+	    font-size: 30px;
+	    
+	}
+	.banner_txt span::after{
+		width: 200px;
+	}
+	.treatment .treatment_inner .inner_l{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.treatment .treatment_inner .inner_r{
+		width: 90%;
+		padding: 20px;
+		position: relative;
+	}
+	
+ }

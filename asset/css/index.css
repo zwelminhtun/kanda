@@ -1,0 +1,533 @@
+
+
+.banner{
+    padding: 150px 0;
+}
+.banner .banner_inner{
+     direction: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+}
+.banner .banner_inner .inner_txt{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+.banner .inner_txt .txt_01 span{
+    font-size: 50px;
+    display: block;
+}
+.banner .inner_txt .txt_01{
+    margin-bottom: 20px;
+}
+.banner .inner_txt .txt_02 span{
+    font-size: 30px;
+    color: white;
+    background-color: #0084AB;
+    padding:10px 10px ;
+}
+.date{
+   background-color: #E9F8F8;
+}
+.date .date_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 0px;
+
+}
+.date .inner_l{
+   background-color: #0084AB;
+   width: 20%;
+   text-align: center;
+   padding: 20px 0px;
+   
+}
+.date .inner_l span{
+   font-size: 20px;
+   color: white;
+   display: inline;
+}
+.date .inner_r{
+    background-color: white;
+    width: 80%;
+    padding: 20px 0px;
+    position: relative;
+}
+.date .inner_r span{
+   font-size: 20px;
+   color: black;
+   padding:0 20px;
+   display: inline;
+   margin-left: 30px;
+}
+.date .inner_r::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid #0084AB;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 25%;
+}
+
+.aboutus{
+     max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+}
+.aboutus span{
+    font-size: 30px;
+    margin:0 auto;
+}
+.aboutus .aboutus_inner{
+    width: 50%;
+    padding-top: 50px;
+}
+.aboutus_inner p{
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+.aboutus_inner button{
+    background-color: #FF8B00;
+    width: 60%;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    margin: 0 30px;
+}
+.aboutus .inner_02{
+    margin: auto 0;
+
+}
+.work .work_01, .work .work_02{
+    padding: 50px 0;
+}
+.work .work_inner_01{
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+.work .work_inner_02{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+.work  .work_box{
+    background-color: white;
+    opacity: .9;
+    padding:40px;
+    width: 60%;
+}
+.work .title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.work span{
+    display: block;
+}
+.work button{
+    background-color:#FF8B00;
+    width: 60%;
+    height: 50px; 
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+.menu_01 {
+    margin-top: 50px;
+    text-align: center;
+}   
+.menu_01 .title_01{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.menu_01 .title_02{
+    font-size: 20px;
+    display: block;
+    color:#329CBB;
+}
+.menu_01 span{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color:black;
+    display: block;
+}
+ .menu_inner_01,.menu_inner_02,.menu_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.menu_01 .submenu{
+    width: 24%;
+    box-sizing:border-box;
+    background-color: #E9F8F8;
+    height: 20%;
+    padding-top: 50px;
+    margin: 7px 0;
+}
+.menu_02{
+    margin-top: 100px;
+    background-color: #E9F8F8;
+    text-align: center;
+}
+.menu_02 .submenu{
+    width: 32%;
+    box-sizing:border-box;
+    height: 20%;
+    margin: 80px 0px;
+    background-color: white;
+
+}
+.menu_01 .submenu img{
+    width: 50px;
+}
+.menu_02 .submenu .img_circle{
+    margin-top: 20px;
+    width: 40px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:#E9F8F8;
+}
+.menu_02 span{
+    font-size: 25px;
+    display: block;
+    margin:20px 0px; 
+}
+.menu_02 p{
+    text-align: justify;
+    padding: 0px 15px;
+}
+.menu_02 button{
+    background-color: #FF8B00;
+    width:95%;
+    height: 50px;
+    margin: 20px auto;
+    color: white;
+    font-size: 18px;
+}
+.menu_03{
+    text-align:center;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+.menu_03 .title{
+    width: 100%;
+    top: 5%;
+}
+.menu_03  .title_01{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.menu_03 .title_02{
+    font-size: 20px;
+    display: block;
+    color:#329CBB;
+}
+.menu_03 .menu_inner{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.menu_03 .menu_box{
+    box-sizing:border-box;
+    border-radius: 20px;
+    margin: 50px 0px;
+    border: 2px solid #4F80FF;
+    top: 15%;
+    text-align: center;
+    padding: 30px 100px;
+    background-color: white;
+}
+.menu_03 .menu_box span{
+    font-size: 30px;
+    color:#329CBB;
+    display: block;
+    margin-bottom: 30px;
+}
+.menu_box p{
+    padding-top:30px;
+}
+.menu_box button{
+    background-color: #FF8B00;
+    width:300px;
+    height: 50px;
+    margin: 30px auto;
+    color: white;
+    font-size: 18px;
+    
+}
+.point .point_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0;
+    margin-bottom: 100px;
+}
+.point .sub_inner{
+    width: 32%;
+    box-sizing:border-box;
+    border: 2px solid #4F80FF;
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
+}
+.point .sub_inner img{
+
+    height: 120px;
+    width: auto;
+    margin-bottom: 20px;
+}
+.point .sub_inner .title{
+    font-size: 30px;
+    color: #4F80FF;
+    display: block;
+}
+.point .sub_inner p{
+    padding: 20px 20px;
+}
+.point .sub_point{
+    position: absolute;
+    top:-70px;
+    left: 50%;
+    margin-left: -60px;
+    background: white;
+    width: 120px;
+    height: 140px;
+    text-align: center;
+}
+.point .sub_point .title{
+    font-size: 23px;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+.point .sub_point .title::after{
+    background-color:#FF8B00 ; 
+    top :65px;
+    content: '';
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 60px;
+}
+.point .sub_point p{
+    font-size: 50px;
+    font-family: sans-serif;
+    padding-top: 0px;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    .banner .inner_txt .txt_01 span{
+        font-size: 37px;
+    }
+    .banner .inner_txt .txt_02 span{
+        font-size: 22px;
+    }
+    .date .inner_l{
+        width: 30%;
+        margin-left: 2%;
+
+    }
+    .date .inner_r{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .date .inner_r span{
+        display: block;
+    }
+    .date .inner_r::before{
+       content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid transparent;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    .aboutus .title {
+        width: 100%;
+         margin:0 auto;
+         text-align: center;
+    }
+    .aboutus .title span{
+        display: block;
+        font-size: 22px;
+    }
+    .aboutus .inner_01,.aboutus .inner_02{
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .aboutus .inner_02{
+        width: 100%;
+        text-align: center;
+    }
+    .aboutus .contact{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        top: 30%;
+    }
+    .aboutus .contact .phoneno{
+        width: 50%;
+        text-align: center;
+        background-color: #FF8B00;
+        padding: 20px 0;
+        border-right: 1px solid white;
+        box-sizing: border-box;
+
+    }
+    .aboutus .contact .date{
+        width: 50%;
+        text-align: center;
+        background-color: #FF8B00;
+         padding: 20px 0;
+    }
+    .work  .work_box{
+    background-color: white;
+    opacity: .9;
+    padding:30px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    }
+    .work .title{
+        font-size: 22px;
+    }
+    .menu_01 .title_01{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .menu_01 span{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        color:black;
+        display: block;
+    }
+    .menu_01 .submenu{
+        width: 49%;
+        box-sizing:border-box;
+        background-color: #E9F8F8;
+        height: 20%;
+        padding-top: 50px;
+        margin: 7px 0;
+    }
+    .menu_02 .submenu{
+        width: 90%;
+        box-sizing:border-box;
+        height: 20%;
+        margin: 30px auto;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding:0 20px;
+
+    }
+    .menu_02 .submenu img{
+        margin-right: 20px;
+    }
+    .menu_02 .submenu span{
+        padding-top: 10px;
+        color: #0084AB;
+        font-size: 20px;
+    }
+
+    .menu_02 button{
+        background-color: #FF8B00;
+        width:50%;
+        height: 50px;
+        margin: 20px auto;
+        color: white;
+        font-size: 18px;
+        float: right;
+        margin-right: 20px;
+    }
+    .menu_03{
+        text-align:center;
+        padding: 30px;
+        margin-bottom: 0;
+    }
+    .menu_03  .title_01{
+        font-size: 30px;
+    }
+    .menu_03 .menu_box{
+        box-sizing:border-box;
+        border-radius: 20px;
+        margin: 30px 0px;
+        border: 2px solid #4F80FF;
+        top: 15%;
+        text-align: center;
+        padding: 10px 30px;
+        background-color: white;
+    }
+    .menu_03 .menu_box span{
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .point .sub_inner{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}

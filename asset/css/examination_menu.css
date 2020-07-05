@@ -1,0 +1,113 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+    
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 300px;
+    z-index: -1;
+}
+.examination_menu{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.examination_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.examination_inner::after{
+    background-color:lightgray ; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 95%;
+}
+.examination_inner .title{
+    width: 100%;
+    font-size: 25px;
+    color:#0084AB;
+    border-left: 5px solid #0084AB;
+    display: block;
+    margin-bottom: 20px;
+}
+.examination_inner span{
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+}
+.examination_inner button{
+    width: 200px;
+    height: 40px; 
+    color: white;
+    background-color: #FF8B00;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.examination_02{
+    background-color: #E9F8F8;
+}
+.examination{
+    margin-bottom: 100px;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0;
+    }
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 200px;
+    }
+}

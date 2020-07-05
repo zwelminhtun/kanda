@@ -1,0 +1,193 @@
+.banner{
+    padding: 200px 0;
+}
+.banner_txt{
+    
+    font-size: 40px;
+     position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.banner_txt span::after{
+    background-color:#FFB05A ; 
+    top :40px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 500px;
+    z-index: -1;
+}
+.clinic_philosophy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    padding:20px;
+}
+.information_title{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #E9F8F8;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.about .about_inner{
+    padding-left: 10%;
+}
+.about .about_inner span{
+    padding: 10px 20px;
+    border: 2px solid #0084AB;
+    color: #0084AB;
+    font-size: 20px;
+}
+.about .about_inner ul{
+    margin: 40px 20px;
+}
+.about_doctor .doctor_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.doctor_inner .doctor_img{
+    width: 30%;
+    text-align:center;
+    font-weight: bold;
+}
+.doctor_inner .doctor_img span{
+    display: block;
+}
+.doctor_inner .bio_txt{
+    width: 20%;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+.doctor_inner .bio_txt span{
+    padding: 5px 20px;
+    background-color: #0084AB;
+}
+.doctor_inner .detail{
+    width: 50%;
+    padding: 20px 0px;
+}
+.doctor_inner_01 .top_doctor{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.doctor_inner_01{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.doctor_inner_01 .top_doctor_01{
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+}
+.doctor_inner_01 .top_doctor_01 span{
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+@media only screen and (min-width: 1000px) {
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .banner{
+        padding: 150px 0;
+    }
+    .banner_txt{
+    
+        font-size: 30px;
+        
+    }
+    .banner_txt span::after{
+        width: 350px;
+    }
+    .about .about_inner{
+        padding:0 20px;
+        text-align: center;
+    }
+    .greeting {
+        text-align: center;
+    }
+    .doctor_inner .doctor_img{
+    width: 50%;
+    text-align:center;
+    font-weight: bold;
+    margin: 0 auto;
+    }
+    .doctor_inner .doctor_img span{
+        display: block;
+    }
+    .doctor_inner .bio_txt{
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 20px 0px;
+    }
+    
+    .doctor_inner .detail{
+        width: 80%;
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+   
+}
+@media only screen and (max-width: 600px) {
+
+.doctor_inner_01 .top_doctor_01{
+    width: 60%;
+   margin-bottom: 50px;
+}
+
+}
